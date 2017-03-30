@@ -1,0 +1,19 @@
+@import "base/reset";
+@import "base/fonts";
+
+@import "mixin";
+@import "variables";
+
+@import "templates/button";
+
+@import "templates/header";
+@import "templates/rating-section";
+@import "templates/rating-slider";
+@import "templates/rating-movies";
+@import "templates/rating-sidebar";
+@import "templates/footer";
+
+@import "templates/mediaL";
+@import "templates/mediaM";
+@import "templates/mediaS";
+@import "templates/mediaXS";

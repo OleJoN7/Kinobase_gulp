@@ -1,0 +1,74 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:12px Tahoma, sans-serif; background:#fff; color:#000; }
+div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,legend,label,select,input,textarea,button {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+button                         { cursor: pointer; padding: 0 }
+textarea                       { vertical-align:top; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+img                            { vertical-align: top; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:hover                        { text-decoration:none; }
+button:focus {
+ outline: none;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a {
+  text-decoration:none;
+  color:#fff;
+}
+a:focus, a:hover {
+  color: #2098D1;
+  text-decoration: none;
+}
+ol {
+  list-style-type:decimal;
+}
+img {
+  width:100%;
+  display:block;
+  height:auto;
+}
+main {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  text-align: center;
+}
+
+.content {
+  -webkit-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+footer {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+
+
+
+
+
+
+

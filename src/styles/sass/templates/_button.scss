@@ -1,0 +1,88 @@
+.button {
+  border: none;
+  padding: .5em;
+  background: #2f2f2f;
+  display: inline-block;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffea00;
+    color: #000;
+    transform: scaleX(0);
+    transform-origin: 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  &-more {
+    padding: .3em 1.5em;
+    background: linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(36, 36, 36, 1) 0%, rgba(15, 15, 15, 1) 0%, rgba(82, 82, 82, 1) 0%, rgba(74, 74, 74, 1) 12%, rgba(67, 67, 67, 1) 28%, rgba(61, 61, 61, 1) 40%, rgba(59, 59, 59, 1) 65%, rgba(13, 13, 13, 1) 86%, rgba(0, 0, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#171717', endColorstr='#000000', GradientType=0);
+
+  }
+}
+
+.button:hover, .button:focus, .button:active {
+  color: #000;
+}
+
+.button:hover:before, .button:focus:before, .button:active:before {
+  transform: scaleX(1);
+  border-radius: 4px;
+}
+
+.hide-show-btn {
+  display: none;
+  border: none;
+  position: relative;
+  float: right;
+  background: transparent;
+  cursor: pointer;
+  margin-top: .6em;
+  opacity: 0.7;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+  &:focus {
+    outline: none;
+  }
+  .icon {
+    display: block;
+    border: 2px solid #ffea00;
+    width: 30px;
+    margin-bottom: .5em;
+
+  }
+}
+
+.white {
+  margin-left: .3em;
+  text-indent: -9999px;
+  width: 17px;
+  height: 17px;
+  background: url('../../images/white-star.png') 50% no-repeat;
+}
+
+.red {
+  margin-left: .3em;
+  text-indent: -9999px;
+  width: 17px;
+  height: 17px;
+  background: url('../../images/red-star.png') 50% no-repeat;
+}

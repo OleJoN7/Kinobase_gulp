@@ -1,0 +1,400 @@
+.main-part-block {
+  flex-basis: 75%;
+}
+
+.sidebar-block {
+  flex-basis: 25%;
+}
+
+.high-rating-list {
+  display: flex;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    width: 52px;
+    height: 343px;
+    margin: .8em auto;
+    background: url('../../images/list-element.png') 50% no-repeat;
+    position: absolute;
+    left: -7%;
+  }
+  li {
+    width: calc(100% / 3);
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    justify-content: space-between;
+    &:first-child h4 {
+      padding-bottom: 1.65em;
+    }
+  }
+  h4 {
+    @include font(.75rem, "TahomaR");
+    text-align: left;
+    padding-bottom: .5em;
+  }
+  .rating-img-wrap {
+    height: 145px;
+    width: 211px;
+    outline: 5px solid #cecece;
+    margin-bottom: 3em;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 42px;
+      height: 27px;
+      bottom: -5%;
+      background: url('../../images/high-rating-corner.png') 50% no-repeat;
+    }
+    &:after {
+      content: '';
+      display: block;
+      width: 211px;
+      height: 21px;
+      margin: .8em auto;
+      background: url('../../images/shadow.png') 50% no-repeat;
+    }
+    .film-stars-block {
+      display: flex;
+      position: absolute;
+      top: 2%;
+      right: 2%;
+      li {
+        margin-left: .3em;
+        width: 17px;
+        height: 17px;
+        button {
+          display: inline-block;
+          border: none;
+          margin-left: .3em;
+          text-indent: -9999px;
+          width: 17px;
+          height: 17px;
+          text-indent: -9999px;
+        }
+      }
+    }
+  }
+  .high-rating-description {
+    p {
+      @include font(.6875rem, "TahomaR");
+      text-align: left;
+      color: #202020;
+      padding-bottom: .8em;
+    }
+  }
+}
+
+.button-wrap {
+  text-align: left;
+  padding-bottom: 2em;
+}
+
+//------------------------------------------------------------------
+
+//---------------------------------- EVENTS -------------------------
+
+.events-block {
+  .events-list > li {
+    background: #262626;
+    &:first-child {
+      padding-top: .3em;
+      border-radius: 5px;
+      box-shadow: 0 12px 15px -10px #000;
+    }
+  }
+  .events-list h5 {
+    text-align: left;
+    @include font(.875rem, "TahomaB");
+    color: #6d6c6c;
+    padding: .3em 0 .3em .5em;
+    &:last-child {
+      padding-right: 5.5em;
+    }
+  }
+  .cinema-events-wrap {
+    text-align: left;
+    margin-top: 1em;
+    > div {
+      display: flex;
+      justify-content: space-between;
+    }
+    .cinema-events-heading {
+      position: relative;
+      border-top: 1px solid #121212;
+      border-bottom: 1px solid #343333;
+      &:before {
+        position: absolute;
+        top: 0;
+        height: 1px;
+        width: 100%;
+        display: block;
+        content: '';
+        border-bottom: 1px solid #343333;
+      }
+      &:after {
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        display: block;
+        content: '';
+        border-bottom: 1px solid #121212;
+      }
+    }
+    .description {
+      padding: 0 1em .5em .5em;
+    }
+    .cinema-events-description {
+      padding: .3em 0 .3em;
+      border-bottom: 1px solid #343333;
+      position: relative;
+      &:after {
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        display: block;
+        content: '';
+        border-bottom: 1px solid #121212;
+      }
+    }
+  }
+  p {
+    color: #fff;
+    @include font(.75rem, "TahomaR");
+  }
+  .week-rating-heading {
+    border-bottom: 1px solid #343333;
+    position: relative;
+    &:after {
+      position: absolute;
+      bottom: 0;
+      height: 1px;
+      width: 100%;
+      display: block;
+      content: '';
+      border-bottom: 1px solid #121212;
+    }
+  }
+  .week-rating-description {
+    text-align: left;
+    border-bottom: 1px solid #343333;
+    position: relative;
+    &:after {
+      position: absolute;
+      bottom: 0;
+      height: 1px;
+      width: 100%;
+      display: block;
+      content: '';
+      border-bottom: 1px solid #121212;
+    }
+    p {
+      margin-bottom: .4em;
+    }
+    .rating-link {
+      display: flex;
+    }
+    .date {
+      color: #f42158;
+      @include font(11px, "TahomaB");
+      padding-right: .8em;
+      padding-left: .3em;
+    }
+    .count {
+      color: #8d8d8d;
+      padding-right: .8em;
+    }
+  }
+  .social-block {
+    margin-bottom: .8em;
+    .social-heading {
+      border-bottom: 1px solid #343333;
+      position: relative;
+      &:after {
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        display: block;
+        content: '';
+        border-bottom: 1px solid #121212;
+      }
+    }
+    .social-list {
+      display: flex;
+      padding: .5em 0 .5em 1em;
+      li {
+        margin-right: .5em;
+        a {
+          width: 25px;
+          height: 25px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+@for $i from 0 to 10 {
+  $step: 11.2%;
+  .social-list {
+    li:nth-child(#{$i+1}) a {
+      background: url('../../images/sprite.png') no-repeat ($step * $i) 0;
+    }
+  }
+}
+
+//------------------------------------------------------------------------
+
+//--------------------------TEASERS --------------------------------------
+
+.teaser-block {
+  box-shadow: 0 0 2px 2px #8d8d8d;
+  padding-top: .5em;
+  margin-bottom: 1.2em;
+  h4 {
+    @include font(.875rem, "TahomaR");
+    padding: .6em .3em .6em 4em;
+    background: url('../../images/teaser-block-bg.png') 50% no-repeat;
+    background-size: cover;
+    margin: 0 .5em .7em;
+    span {
+      @include font(.75rem, "TahomaR");
+      color: #3771c8;
+    }
+    .white {
+      @include font(.6875rem, "TahomaR");
+      color: #fff;
+    }
+  }
+  .teaser-img-wrap {
+    padding: 0 .7em 1em;
+    border-bottom: 1px solid #121212;
+    img {
+      outline: 2px solid #6d6c6c;
+    }
+  }
+  .teaser-description {
+    border-top: 1px solid #343333;
+    border-bottom: 1px solid #121212;
+    padding: .5em 1em .5em .7em;
+    text-align: left;
+  }
+  .teaser-info {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+    border-top: 1px solid #343333;
+    margin-bottom: 1em;
+  }
+}
+
+//------------------------------------------------------------
+
+//------------PAGINATION-------------------------------------
+.pagination-block {
+  position: relative;
+  bottom: 70px;
+}
+
+.pagination {
+  margin-bottom: 2em;
+  li a {
+    color: #fff;
+    @include font(.625rem, "TahomaR");
+    display: inline-block;
+    height: 30px;
+    width: 45px;
+    line-height: 4.5em;
+    text-indent: -0.3em;
+    background: url('../../images/page.png') 50% 100% no-repeat;
+    &:hover {
+      color: #ffea00;
+    }
+  }
+}
+
+.active-page {
+  text-indent: -0.2em !important;
+  line-height: 3em !important;
+  font-size: .875rem !important;
+  background: url('../../images/active-page.png') 45% 50% no-repeat !important;
+  transition: .2s ease-in-out;
+  &:hover {
+    color: #ffea00;
+  }
+}
+
+//-----------------------------------------------------------
+
+.cinema-announcement {
+  padding: 1em .3em .7em .7em;
+  margin-bottom: 1.2em;
+  box-shadow: 0 80px 30px -80px #6d6c6c;
+  .announcement-block {
+    overflow: hidden;
+    padding-bottom: 1em;
+    .announcement-description {
+      float: right;
+      width: 75%;
+      text-align: left;
+      padding-left: .4em;
+      p:first-child {
+        padding-bottom: .5em;
+      }
+    }
+    .announcement-img-wrap {
+      float: left;
+      width: 74px;
+      height: 73px;
+    }
+  }
+}
+
+.spectator-look {
+  padding: 1em .3em .7em .7em;
+  box-shadow: 0 80px 30px -80px #6d6c6c;
+  margin-bottom: 1.2em;
+  p {
+    text-align: left;
+    padding-bottom: 1.5em;
+    a {
+      color: #3771c8;
+    }
+  }
+}
+
+.serial-news {
+  padding: 1em .8em .7em .7em;
+  text-align: left;
+  position: relative;
+  box-shadow: -85px 115px 55px -110px #6d6c6c;
+  > p {
+    padding-bottom: .5em;
+  }
+  .serial-info-block {
+    overflow: hidden;
+    padding-bottom: 1em;
+    .serial-img-wrap {
+      width: 100px;
+      height: 50px;
+      float: left;
+      margin: 0 .8em .5em 0;
+    }
+  }
+  .comments-block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5em;
+    > div {
+      color: #a2a2a2;
+      @include font(.625rem, "TahomaR");
+    }
+  }
+}

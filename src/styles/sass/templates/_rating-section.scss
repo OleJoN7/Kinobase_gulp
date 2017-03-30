@@ -1,0 +1,60 @@
+.rating-section {
+  background: #e3e3e3;
+  padding-top: 2em;
+  padding-bottom: 7em;
+}
+
+.rating-header h2 {
+  @include font(1.1875rem, "TahomaB");
+  color: #a8a6a6;
+  text-align: left;
+  padding-left: 3.5em;
+  padding-bottom: .3em;
+}
+
+.motivation-description {
+  padding-bottom: 1.2em;
+  text-align: center;
+  @include font(1rem, "TahomaB");
+  strong {
+    font-size: 1.2rem;
+  }
+}
+
+.movies-blocks {
+  display: flex;
+}
+
+.events-news-block {
+  display: flex;
+  .events-block {
+    flex-basis: 55%;
+    margin-right: .5em;
+  }
+  .news-block {
+    flex-basis: 45%;
+    .news-wrap {
+      background: #fff;
+      border-radius: 5px 0 0 5px;
+      h6 {
+        @include font(.875rem, "TahomaB");
+        text-align: left;
+        padding-bottom: 1em;
+      }
+    }
+  }
+}
+
+.sidebar-block {
+  h5 {
+    @include font(.75rem, "TahomaB");
+    padding: .6em .3em 1.5em 4em;
+    background: url('../../images/update-bg.png') 50% no-repeat;
+    background-size: cover;
+    margin: 0 .3em 1em;
+    text-indent: 30px;
+    span {
+      color: #f70f3b;
+    }
+  }
+}

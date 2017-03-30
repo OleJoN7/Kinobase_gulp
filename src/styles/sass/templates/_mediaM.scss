@@ -1,0 +1,23 @@
+@media (min-width:992px) and (max-width:1199px) {
+  .sidebar-block h5 {
+    background-size: contain;
+    text-indent: 19px;
+    font-size: 0.7rem;
+  }
+  .update-wrap {
+    margin-bottom: 3.2em;
+  }
+  .update-wrap .update-block .update-description {
+    width: 67%;
+  }
+  .update-wrap .update-info p a:after {
+    right: -19%;
+  }
+  .spectator-look {
+    padding: 1em .3em .3em .7em;
+    margin-bottom: 1em;
+  }
+  .serial-news .comments-block {
+    padding-bottom: 1em;
+  }
+}

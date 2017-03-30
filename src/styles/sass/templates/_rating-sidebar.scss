@@ -1,0 +1,201 @@
+.update-wrap {
+  background: #262626;
+  color: #fff;
+  padding-top: 1.5em;
+  border-radius: 4px;
+  margin-bottom: 2em;
+  box-shadow: 0 22px 35px -15px #000;
+  h5 {
+    padding: .6em .3em 1.5em 4em;
+    margin: 0 .3em 1.5em;
+  }
+  .update-block {
+    overflow: hidden;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #343333;
+    position: relative;
+    padding: 0.3em .3em .7em;
+    &:after {
+      position: absolute;
+      bottom: 0;
+      height: 1px;
+      width: 100%;
+      display: block;
+      content: '';
+      border-top: 1px solid #121212;
+    }
+    .update-img-wrap {
+      padding-left: .2em;
+      width: 65px;
+      height: 68px;
+      margin-right: .4em;
+      float: left;
+      img {
+        outline: 2px solid #383838;
+      }
+    }
+    .update-description {
+      text-align: left;
+      float: right;
+      width: 73%;
+      @include font(.6875rem, "TahomaB");
+      p:last-child {
+        padding-bottom: .4em;
+        @include font(.6875rem, "TahomaR");
+      }
+    }
+  }
+  .update-info {
+    padding-bottom: 1.2em;
+    p {
+      @include font(.75rem, "TahomaR");
+      a {
+        position: relative;
+        &:after {
+          display: block;
+          content: '';
+          width: 20px;
+          height: 20px;
+          background: url('../../images/watch.png') 50% no-repeat;
+          position: absolute;
+          right: -25%;
+          top: -30%;
+        }
+      }
+    }
+  }
+}
+
+//---------------------------------------------------------------
+
+.ticket-office {
+  background: #262626;
+  color: #fff;
+  padding: .5em 0 1.5em;
+  .office-list {
+    padding: 0 1em;
+    li {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      .office-movie-title p:last-child {
+        padding-left: 1.6em;
+        @include font(.6875rem, "TahomaR");
+        color: #787777;
+      }
+      span {
+        color: #f70f3b;
+        padding-right: .7em;
+      }
+      > p {
+        padding-top: .3em;
+      }
+    }
+  }
+}
+
+//-----------Last Comments---------------------------------
+
+.last-comments {
+  background: #262626;
+  color: #fff;
+  text-align: left;
+  .comment-block {
+    padding: 0 1em;
+    a {
+      @include font(.875rem, "TahomaB");
+      color: #f70f3b;
+      padding-bottom: .6em;
+      display: inline-block;
+    }
+    p:last-child {
+      @include font(.75rem, "TahomaR");
+      padding-bottom: 1em;
+    }
+  }
+}
+
+// -----------------------Movie Queries----------------------
+
+.movie-queries {
+  background: #262626;
+  color: #fff;
+  padding-bottom: .8em;
+  border-radius: 0 0 3px 3px;
+  .query-list {
+    padding: 0 1em;
+    position: relative;
+    border-bottom: 1px solid #343333;
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      display: block;
+      content: '';
+      border-top: 1px solid #121212;;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+      padding-bottom: .7em;
+      > p {
+        padding-top: 1.5em;
+      }
+      div {
+        a {
+          @include font(.875rem, "TahomaR");
+        }
+        p:last-child {
+          color: #787777;
+          @include font(.75, "TahomaR");
+        }
+      }
+    }
+  }
+  .random-movie {
+    padding: 0 1em;
+    position: relative;
+    border-bottom: 1px solid #343333;
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      display: block;
+      content: '';
+      border-top: 1px solid #121212;;
+    }
+    p:first-child {
+      color: #6e6a6a;
+      text-align: left;
+      @include font(1rem, "TahomaB");
+      text-transform: uppercase;
+      padding-bottom: .3em;
+    }
+    p:last-child {
+      text-align: right;
+      @include font(.625, "TahomaR");
+      padding-bottom: .2em;
+    }
+    .random-img-wrap {
+      position: relative;
+      a {
+        display: block;
+      }
+      p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 1.5em;
+        background: rgba(0, 0, 0, .4);
+        width: 100%;
+        text-align: left;
+        @include font(.875rem, "TahomaR");
+      }
+    }
+  }
+}

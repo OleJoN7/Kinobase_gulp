@@ -1,0 +1,10 @@
+@mixin font ($size,$family) {
+  font:$size $family,sans-serif;
+}
+@mixin background-mix($url,$size) {
+  background:#fff $url 50% 50% no-repeat;
+  background-size:$size;
+}
+
+
+

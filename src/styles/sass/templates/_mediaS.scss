@@ -1,0 +1,96 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-nav-block .main-nav .nav-list li {
+    padding: 1em .5em;
+  }
+  .header-nav-block .main-nav .nav-list li a {
+    font-size: .7rem;
+  }
+  .search-block {
+    padding: 0;
+  }
+  .additional-search-block:before {
+    right: -2.4em;
+  }
+  .additional-search-block:after {
+    right: 24em;
+  }
+  .additional-register-block:before {
+    left: -3em;
+  }
+
+  .register-search-block .register-block a:first-child {
+    padding-left: 0;
+  }
+  .movies-blocks {
+    flex-direction: column;
+  }
+  .main-part-block {
+    flex-basis: initial;
+  }
+  .sidebar-block {
+    flex-basis: initial;
+    display: flex;
+    flex-wrap: wrap;
+    section {
+      flex-basis: 45%;
+      margin: 1em auto;
+      box-shadow: 0 22px 35px -15px #000;
+      border-radius: 4px;
+    }
+  }
+  .cinema-announcement .announcement-block .announcement-description {
+    width: 73%;
+  }
+  .pagination-block {
+    position: relative;
+    bottom: -15px;
+  }
+
+  .sidebar-block h5 {
+    background-size: contain;
+    text-indent: 30px;
+    font-size: .9rem;
+    margin-top: 1em;
+  }
+  .update-wrap {
+    margin-bottom: 3.2em;
+    h5 {
+      font-size: 1rem;
+      margin-top: 0;
+    }
+  }
+  .update-wrap .update-block .update-description {
+    width: 75%;
+  }
+  .spectator-look {
+    padding: .5em .3em .3em .5em;
+    margin-bottom: .5em;
+  }
+  .ticket-office .office-list li {
+    padding-bottom: 1.5em;
+  }
+  .serial-news .comments-block {
+    padding-bottom: 1em;
+  }
+  .last-comments .comment-block a {
+    font-size: 1.3rem;
+    padding-bottom: 1em;
+  }
+  .last-comments .comment-block p:last-child {
+    font-size: .9rem;
+    padding-bottom: 1em;
+  }
+
+  .main-footer .footer-list {
+    flex-wrap: wrap;
+    text-align: center;
+    > li {
+      width: calc(100% / 4);
+      margin: 0 auto;
+      padding-bottom: .5em;
+    }
+  }
+  .main-footer .footer-list:after {
+    top: -27%;
+  }
+}
