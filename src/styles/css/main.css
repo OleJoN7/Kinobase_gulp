@@ -1143,6 +1143,11 @@ footer {
     top: -27%; } }
 
 @media (max-width: 767px) {
+  .main-nav {
+    display: none;
+    padding-top: 1em; }
+  .hide-show-btn {
+    display: block; }
   .header-nav-block .main-nav .nav-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1279,4 +1284,10 @@ footer {
     padding-bottom: 1em; }
   .last-comments .comment-block p:last-child {
     font-size: .9rem;
-    padding-bottom: 1em; } }
+    padding-bottom: 1em; }
+  .events-block .cinema-events-wrap .cinema-events-heading:after, .events-block .cinema-events-wrap .cinema-events-description:after {
+    left: 0; }
+  .teaser-block h4 {
+    font-size: .8rem;
+    text-align: right;
+    padding: .6em .3em .6em 2em; } }
