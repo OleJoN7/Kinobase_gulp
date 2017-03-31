@@ -37,11 +37,11 @@ $(document).ready(function () {
     //-----------------Rating Click------------------------
 
     $('.film-stars-block li button,.slider-rating-block li button').on('click', function () {
-        if ($(this).hasClass('red')) {
-            $(this).addClass('white').removeClass('red');
+        if ($(this).hasClass('red-btn')) {
+            $(this).addClass('white-btn').removeClass('red-btn');
         }
         else {
-            $(this).addClass('red').removeClass('white');
+            $(this).addClass('red-btn').removeClass('white-btn');
         }
     });
 

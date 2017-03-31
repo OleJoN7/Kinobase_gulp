@@ -169,14 +169,14 @@ footer {
     width: 30px;
     margin-bottom: .5em; }
 
-.white {
+.white-btn {
   margin-left: .3em;
   text-indent: -9999px;
   width: 17px;
   height: 17px;
   background: url("../../images/white-star.png") 50% no-repeat; }
 
-.red {
+.red-btn {
   margin-left: .3em;
   text-indent: -9999px;
   width: 17px;
