@@ -99,6 +99,29 @@
 //---------------------------------- EVENTS -------------------------
 
 .events-block {
+  .events-list {
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 5%;
+      left:0;
+      height: 1px;
+      width: 100%;
+      display: block;
+      content: '';
+      border-bottom: 1px solid #343333;
+    }
+    &:after {
+      position: absolute;
+      top: 4.8%;
+      left:0;
+      height: 1px;
+      width: 100%;
+      display: block;
+      content: '';
+      border-bottom: 1px solid #121212;
+    }
+  }
   .events-list > li {
     background: #262626;
     &:first-child {
@@ -119,49 +142,37 @@
   .cinema-events-wrap {
     text-align: left;
     margin-top: 1em;
-    > div {
-      display: flex;
-      justify-content: space-between;
-    }
-    .cinema-events-heading {
-      position: relative;
-      border-top: 1px solid #121212;
+    display:flex;
+    justify-content: space-between;
+    padding:0 1em 0 0.5em;
+    position: relative;
+    border-top: 1px solid #121212;
+    border-bottom: 1px solid #343333;
+    &:before {
+      position: absolute;
+      top: 0;
+      left:0;
+      height: 1px;
+      width: 100%;
+      display: block;
+      content: '';
       border-bottom: 1px solid #343333;
-      &:before {
-        position: absolute;
-        top: 0;
-        height: 1px;
-        width: 100%;
-        display: block;
-        content: '';
-        border-bottom: 1px solid #343333;
-      }
-      &:after {
-        position: absolute;
-        bottom: 0;
-        height: 1px;
-        width: 100%;
-        display: block;
-        content: '';
-        border-bottom: 1px solid #121212;
-      }
     }
-    .description {
-      padding: 0 1em .5em .5em;
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left:0;
+      height: 1px;
+      width: 100%;
+      display: block;
+      content: '';
+      border-bottom: 1px solid #121212;
     }
-    .cinema-events-description {
-      padding: .3em 0 .3em;
-      border-bottom: 1px solid #343333;
-      position: relative;
-      &:after {
-        position: absolute;
-        bottom: 0;
-        height: 1px;
-        width: 100%;
-        display: block;
-        content: '';
-        border-bottom: 1px solid #121212;
-      }
+    h5 {
+      padding-left:0;
+    }
+    .description-list {
+      padding: 0 1em .5em 0;
     }
   }
   p {
@@ -241,14 +252,21 @@
   }
 }
 
-@for $i from 0 to 10 {
-  $step: 11.2%;
-  .social-list {
-    li:nth-child(#{$i+1}) a {
-      background: url('../../images/sprite.png') no-repeat ($step * $i) 0;
-    }
+@each $name, $social-position in $social-positions {
+  .social-list-#{$name} {
+    background: url('../../images/sprite.png') $social-position no-repeat;
   }
 }
+
+//@for $i from 0 to 10 {
+//  $step: 11.2%;
+//  .social-list {
+//    li:nth-child(#{$i+1}) a {
+//      background: url('../../images/sprite.png') no-repeat ($step * $i) 0;
+//    }
+//  }
+//}
+
 
 //------------------------------------------------------------------------
 

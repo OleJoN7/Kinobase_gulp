@@ -572,6 +572,27 @@ footer {
   text-align: left;
   padding-bottom: 2em; }
 
+.events-block .events-list {
+  position: relative; }
+  .events-block .events-list:before {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    display: block;
+    content: '';
+    border-bottom: 1px solid #343333; }
+  .events-block .events-list:after {
+    position: absolute;
+    top: 4.8%;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    display: block;
+    content: '';
+    border-bottom: 1px solid #121212; }
+
 .events-block .events-list > li {
   background: #262626; }
   .events-block .events-list > li:first-child {
@@ -589,46 +610,37 @@ footer {
 
 .events-block .cinema-events-wrap {
   text-align: left;
-  margin-top: 1em; }
-  .events-block .cinema-events-wrap > div {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: justify;
-            justify-content: space-between; }
-  .events-block .cinema-events-wrap .cinema-events-heading {
-    position: relative;
-    border-top: 1px solid #121212;
+  margin-top: 1em;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 0 1em 0 0.5em;
+  position: relative;
+  border-top: 1px solid #121212;
+  border-bottom: 1px solid #343333; }
+  .events-block .cinema-events-wrap:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    display: block;
+    content: '';
     border-bottom: 1px solid #343333; }
-    .events-block .cinema-events-wrap .cinema-events-heading:before {
-      position: absolute;
-      top: 0;
-      height: 1px;
-      width: 100%;
-      display: block;
-      content: '';
-      border-bottom: 1px solid #343333; }
-    .events-block .cinema-events-wrap .cinema-events-heading:after {
-      position: absolute;
-      bottom: 0;
-      height: 1px;
-      width: 100%;
-      display: block;
-      content: '';
-      border-bottom: 1px solid #121212; }
-  .events-block .cinema-events-wrap .description {
-    padding: 0 1em .5em .5em; }
-  .events-block .cinema-events-wrap .cinema-events-description {
-    padding: .3em 0 .3em;
-    border-bottom: 1px solid #343333;
-    position: relative; }
-    .events-block .cinema-events-wrap .cinema-events-description:after {
-      position: absolute;
-      bottom: 0;
-      height: 1px;
-      width: 100%;
-      display: block;
-      content: '';
-      border-bottom: 1px solid #121212; }
+  .events-block .cinema-events-wrap:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    display: block;
+    content: '';
+    border-bottom: 1px solid #121212; }
+  .events-block .cinema-events-wrap h5 {
+    padding-left: 0; }
+  .events-block .cinema-events-wrap .description-list {
+    padding: 0 1em .5em 0; }
 
 .events-block p {
   color: #fff;
@@ -696,35 +708,35 @@ footer {
         height: 25px;
         display: inline-block; }
 
-.social-list li:nth-child(1) a {
-  background: url("../../images/sprite.png") no-repeat 0% 0; }
+.social-list-vk {
+  background: url("../../images/sprite.png") 0 50% no-repeat; }
 
-.social-list li:nth-child(2) a {
-  background: url("../../images/sprite.png") no-repeat 11.2% 0; }
+.social-list-ff {
+  background: url("../../images/sprite.png") 11% 50% no-repeat; }
 
-.social-list li:nth-child(3) a {
-  background: url("../../images/sprite.png") no-repeat 22.4% 0; }
+.social-list-pencil {
+  background: url("../../images/sprite.png") 23% 50% no-repeat; }
 
-.social-list li:nth-child(4) a {
-  background: url("../../images/sprite.png") no-repeat 33.6% 0; }
+.social-list-yandex {
+  background: url("../../images/sprite.png") 34% 50% no-repeat; }
 
-.social-list li:nth-child(5) a {
-  background: url("../../images/sprite.png") no-repeat 44.8% 0; }
+.social-list-bear {
+  background: url("../../images/sprite.png") 45% 50% no-repeat; }
 
-.social-list li:nth-child(6) a {
-  background: url("../../images/sprite.png") no-repeat 56% 0; }
+.social-list-somesocial {
+  background: url("../../images/sprite.png") 56% 50% no-repeat; }
 
-.social-list li:nth-child(7) a {
-  background: url("../../images/sprite.png") no-repeat 67.2% 0; }
+.social-list-fb {
+  background: url("../../images/sprite.png") 68% 50% no-repeat; }
 
-.social-list li:nth-child(8) a {
-  background: url("../../images/sprite.png") no-repeat 78.4% 0; }
+.social-list-mail {
+  background: url("../../images/sprite.png") 79% 50% no-repeat; }
 
-.social-list li:nth-child(9) a {
-  background: url("../../images/sprite.png") no-repeat 89.6% 0; }
+.social-list-star {
+  background: url("../../images/sprite.png") 90% 50% no-repeat; }
 
-.social-list li:nth-child(10) a {
-  background: url("../../images/sprite.png") no-repeat 100.8% 0; }
+.social-list-twitter {
+  background: url("../../images/sprite.png") 100% 50% no-repeat; }
 
 .teaser-block {
   box-shadow: 0 0 2px 2px #8d8d8d;
